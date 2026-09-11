@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marketing OS Attract — Weekly Update: 4–10 Sep closed, 11–17 Sep ahead</title>
+<meta name="description" content="Sixteen stage dates fell in 4–10 September and ten were followed by a status change; two of the three QA-complete dates are confirmed Done (Tailored templates, PayPal-Denied Payouts) while Elemental Library P1 sits Blocked with both its dates passed. Six rows are overdue, all P0, Social listening ol">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#FBFBFD;--surface:#FFFFFF;--sunk:#F4F5F9;--sunk2:#EAECF3;
+  --ink:#14161D;--ink-soft:#41465A;--ink-mute:#6A7086;
+  --line:#E2E4EC;--line-soft:#EDEFF5;
+  --accent:#3B4BC8;--accent-soft:#EDEFFC;
+  --good:#12795A;--good-soft:#E3F2EB;
+  --warn:#9C7A00;--warn-soft:#FAF2D9;
+  --crit:#A81742;--crit-soft:#FBE7ED;
+  --f-d:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-b:"IBM Plex Sans","Segoe UI",Helvetica,Arial,sans-serif;
+  --f-m:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#0F1117;--surface:#171A22;--sunk:#12141B;--sunk2:#1E222C;
+  --ink:#E9EBF1;--ink-soft:#B8BDCC;--ink-mute:#8B91A3;
+  --line:#272B36;--line-soft:#1F232D;
+  --accent:#8E9AF2;--accent-soft:#1E2340;
+  --good:#4FBC91;--good-soft:#12291F;
+  --warn:#D9A03C;--warn-soft:#2B2313;
+  --crit:#EE7A9B;--crit-soft:#2E1620;
+}}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--f-b);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;margin:0;overflow-wrap:break-word}
+.wrap{max-width:940px;margin:0 auto;padding:36px 26px 80px}
+@media(max-width:640px){.wrap{padding:22px 14px 56px}}
+.kicker{font-family:var(--f-m);font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:var(--accent);margin:0 0 9px}
+h1{font-family:var(--f-d);font-weight:700;font-size:clamp(25px,3.7vw,34px);line-height:1.06;letter-spacing:-.022em;margin:0;text-wrap:balance}
+.lede{color:var(--ink-mute);font-size:14.5px;margin:11px 0 0;max-width:68ch}
+.howto{border:1px solid var(--accent);background:var(--accent-soft);border-radius:4px;padding:15px 18px;margin:26px 0 0}
+.howto p{margin:0;font-size:13.6px;color:var(--ink-soft)}
+.howto p+p{margin-top:9px}
+.howto b{color:var(--ink)}
+.divider{border:0;border-top:2px solid var(--ink);margin:34px 0 0}
+.samplebar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding:11px 0 0}
+.samplebar .tagl{font-family:var(--f-m);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute)}
+.mail{border:1px solid var(--line);border-radius:5px;background:var(--surface);overflow:hidden;margin-top:24px}
+.mail-hd{padding:14px 22px;border-bottom:1px solid var(--line);background:var(--sunk)}
+.mail-hd .subj{font-family:var(--f-d);font-size:18px;font-weight:600;letter-spacing:-.011em;margin:0}
+.mail-hd .meta{font-family:var(--f-m);font-size:11.5px;color:var(--ink-mute);margin-top:7px;line-height:1.7}
+.mail-bd{padding:22px}
+@media(max-width:640px){.mail-bd{padding:16px}}
+.tldr{border-left:3px solid var(--accent);padding:2px 0 2px 15px;margin:0 0 26px}
+.tldr p{margin:0;font-size:14.6px}
+h2.s{font-family:var(--f-d);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.11em;color:var(--ink-mute);margin:30px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:9px}
+h2.s:first-child{margin-top:0}
+h2.s .num{font-family:var(--f-m);color:var(--accent);font-size:11px}
+h2.s.crit{color:var(--crit);border-bottom-color:var(--crit)}
+h2.s.crit .num{color:var(--crit)}
+h2.s.good{color:var(--good);border-bottom-color:var(--good)}
+h2.s.good .num{color:var(--good)}
+p.body{font-size:14px;margin:0 0 12px}
+p.body:last-child{margin-bottom:0}
+.muted{color:var(--ink-mute);font-size:13.2px}
+.tblw{overflow-x:auto;border:1px solid var(--line);border-radius:4px;margin:0 0 12px}
+table{border-collapse:collapse;width:100%;min-width:540px;font-size:13.2px}
+th{font-family:var(--f-d);font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-mute);text-align:left;padding:9px 11px;background:var(--sunk);border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:8px 11px;border-bottom:1px solid var(--line-soft);vertical-align:top;overflow-wrap:break-word}
+tr:last-child td{border-bottom:0}
+tfoot td{background:var(--sunk);font-weight:600;border-top:1px solid var(--line)}
+td.n,th.n{text-align:right;font-family:var(--f-m);font-variant-numeric:tabular-nums;white-space:nowrap}
+td.c{font-family:var(--f-m);font-size:12px;white-space:nowrap}
+span.c{font-family:var(--f-m);font-size:12px;overflow-wrap:break-word}
+.nm{font-weight:600}
+.st{font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:3px;white-space:nowrap;display:inline-block}
+.st.live{background:var(--good-soft);color:var(--good)}
+.st.dev{background:var(--accent-soft);color:var(--accent)}
+.st.qa{background:var(--warn-soft);color:var(--warn)}
+.st.blk{background:var(--crit-soft);color:var(--crit)}
+.st.plan{background:var(--sunk2);color:var(--ink-mute)}
+.late{color:var(--crit);font-weight:600;font-family:var(--f-m);font-variant-numeric:tabular-nums}
+.ok{color:var(--good);font-weight:600;font-family:var(--f-m)}
+ul.b{margin:0 0 12px;padding-left:18px;display:flex;flex-direction:column;gap:7px}
+ul.b li{font-size:14px;line-height:1.5}
+ul.b.tight li{font-size:13.4px}
+.callout{border:1px solid var(--line);border-left:3px solid var(--warn);background:var(--surface);border-radius:4px;padding:14px 16px;margin:0 0 12px}
+.callout.c{border-left-color:var(--crit)}
+.callout.a{border-left-color:var(--accent)}
+.callout.g{border-left-color:var(--good)}
+.callout p{margin:0;font-size:13.8px}
+.callout p+p{margin-top:8px}
+.callout .ch{font-family:var(--f-d);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.09em;color:var(--warn);display:block;margin-bottom:6px}
+.callout.danger .ch{color:var(--crit)}
+.callout.a .ch{color:var(--accent)}
+.callout.g .ch{color:var(--good)}
+.chase{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;margin-bottom:12px}
+.chase .p{background:var(--surface);padding:12px 14px}
+.chase .who{font-family:var(--f-d);font-size:13.5px;font-weight:600;margin:0 0 6px}
+.chase ul{margin:0;padding-left:15px;display:flex;flex-direction:column;gap:3px}
+.chase li{font-size:12.6px;color:var(--ink-soft)}
+.chase li.muted{font-size:12px;margin-top:3px;padding-top:5px;border-top:1px solid var(--line-soft);list-style:none;margin-left:-15px}
+.chase .cnt{font-family:var(--f-m);color:var(--crit);font-weight:500}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;margin:0 0 16px}
+.metrics .m{background:var(--surface);padding:13px 15px}
+.metrics .v{font-family:var(--f-d);font-size:24px;font-weight:700;line-height:1;letter-spacing:-.02em}
+.metrics .k{font-family:var(--f-m);font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-mute);margin-top:6px}
+.metrics .m.crit .v{color:var(--crit)}
+.metrics .m.good .v{color:var(--good)}
+.metrics .m.warn .v{color:var(--warn)}
+details{border:1px solid var(--line);border-radius:4px;margin-top:12px;background:var(--surface)}
+details summary{cursor:pointer;list-style:none;padding:12px 16px;font-family:var(--f-d);font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-mute);display:flex;align-items:center;gap:8px}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";font-family:var(--f-m);font-size:15px;margin-left:auto}
+details[open] summary::after{content:"–"}
+details summary:hover{color:var(--ink)}
+details .dbody{padding:0 16px 16px}
+pre{background:var(--sunk);border:1px solid var(--line);border-radius:4px;padding:14px 15px;overflow-x:auto;font-family:var(--f-m);font-size:12px;line-height:1.65;color:var(--ink-soft);margin:0;white-space:pre-wrap}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);font-size:12.6px;color:var(--ink-mute)}
+footer p{margin:0 0 8px;max-width:80ch}
+
+/* collapsible item lists */
+details.tbl{border:1px solid var(--line);border-radius:4px;background:var(--sunk);margin:0 0 12px}
+details.tbl>summary{cursor:pointer;list-style:none;padding:10px 14px;font-family:var(--f-d);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.09em;color:var(--accent);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+details.tbl>summary::-webkit-details-marker{display:none}
+details.tbl>summary::before{content:"▸";font-size:11px;color:var(--accent)}
+details[open].tbl>summary::before{content:"▾"}
+details.tbl>summary:hover{color:var(--ink)}
+details.tbl>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+details.tbl>summary .cn{font-family:var(--f-m);color:var(--ink-mute);font-weight:400;letter-spacing:0;text-transform:none;margin-left:auto}
+details.tbl .tblw{border:0;border-top:1px solid var(--line);border-radius:0;margin:0}
+details.tbl table{background:var(--surface)}
+
+/* callouts: tinted, heavier rule, so they read as the point of the section */
+.callout{border:1px solid var(--line);border-left:5px solid var(--warn);background:var(--warn-soft);border-radius:4px;padding:15px 17px;margin:0 0 14px}
+.callout.danger{border-left-color:var(--crit);background:var(--crit-soft)}
+.callout.a{border-left-color:var(--accent);background:var(--accent-soft)}
+.callout.g{border-left-color:var(--good);background:var(--good-soft)}
+.callout .ch{font-size:11.5px;letter-spacing:.1em;overflow-wrap:break-word}
+.callout p{color:var(--ink);overflow-wrap:break-word}
+.callout .muted{color:var(--ink-soft)}
+/* keep status chips legible against a tinted callout */
+.callout .st{background:var(--surface);box-shadow:inset 0 0 0 1px currentColor}
+
+
+.nav{display:flex;gap:14px;align-items:center;margin:0 0 18px;font-family:var(--f-m);font-size:11.5px}
+.nav a{color:var(--ink-mute);text-decoration:none;border-bottom:1px solid var(--line)}
+.nav a:hover,.nav a:focus-visible{color:var(--accent);border-bottom-color:var(--accent);outline:none}
+details.tbl>summary::after{content:none}
+.mail-hd .meta{margin-top:7px}
+.lede a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--line)}
+.lede a:hover,.lede a:focus-visible{border-bottom-color:var(--accent);outline:none}
+table.next{min-width:640px}
+td.risk{min-width:170px;overflow-wrap:anywhere;word-break:break-word}
+table.wide th{white-space:normal}
+table.wide td,table.wide th{padding:8px 9px}
+table.wide td.c{white-space:nowrap}
+.flag{display:inline}
+.flag.crit b{color:var(--crit)}
+.flag.warn b{color:var(--warn)}
+.note{color:var(--ink-soft)}
+.gen{font-family:var(--f-m);font-size:11.5px}
+/* archive index */
+.arch{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-direction:column;gap:12px}
+.arch li{border:1px solid var(--line);border-radius:5px;background:var(--surface);padding:18px 20px}
+.arch li.latest{border-color:var(--accent);box-shadow:inset 3px 0 0 var(--accent)}
+.arch .hd{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline}
+.arch .hd a{font-family:var(--f-d);font-weight:600;font-size:17px;color:var(--ink);text-decoration:none;letter-spacing:-.011em}
+.arch .hd a:hover,.arch .hd a:focus-visible{color:var(--accent);outline:none}
+.arch .win{font-family:var(--f-m);font-size:11.5px;color:var(--ink-mute)}
+.arch .tag{font-family:var(--f-m);font-size:10.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--accent);background:var(--accent-soft);padding:2px 7px;border-radius:3px}
+.arch .stats{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 0 0;font-family:var(--f-m);font-size:12px;color:var(--ink-soft)}
+.arch .stats b{color:var(--ink)}
+.arch .stats .bad b{color:var(--crit)}
+.arch p.sum{margin:12px 0 0;font-size:13.8px;color:var(--ink-soft);max-width:80ch}
+.empty{border:1px dashed var(--line);border-radius:5px;padding:26px;text-align:center;color:var(--ink-mute);margin-top:26px}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="nav"><a href="/">← All weekly updates</a><a href="https://docs.google.com/spreadsheets/d/11jTy7-YQBCk98UjGYhQO6qsUhQ9hexliJPGL0qN-1yI/edit?gid=1858202106#gid=1858202106" target="_blank" rel="noopener">Open the roadmap sheet</a></div>
+<p class="kicker">Marketing OS · Attract</p>
+<h1>Marketing OS Attract — Weekly Update</h1>
+<!-- ===================== THE EMAIL ===================== -->
+<div class="mail">
+<div class="mail-hd">
+<p class="subj">Marketing OS Attract — Weekly Update: 4–10 Sep closed, 11–17 Sep ahead</p>
+<p class="meta"><b>Read</b> Friday 11 September 2026 · <b>Source</b> Marketing OS - Attract - H2 Roadmap, Roadmap by Product — H2'26 tab · <b>Scope</b> 41 scoped initiatives only (the “Not Finalized the Scope” list is a separate tab and is not read) · 8 products · 31 Level Up</p>
+</div>
+<div class="mail-bd">
+
+<!-- ============ PART A ============ -->
+<h2 class="s"><span class="num">A</span> Week just closed — Fri 4 Sep to Thu 10 Sep</h2>
+<div class="metrics">
+<div class="m"><div class="v">16</div><div class="k">milestones arrived</div></div>
+<div class="m good"><div class="v">10</div><div class="k">moved on by status</div></div>
+<div class="m crit"><div class="v">6</div><div class="k">arrived, status unchanged</div></div>
+<div class="m"><div class="v">3</div><div class="k">QA-complete dates due</div></div>
+<div class="m crit"><div class="v">2</div><div class="k">confirmed Done</div></div>
+</div>
+
+<h2 class="s crit"><span class="num">A1</span> Three QA-complete dates due — two confirmed Done</h2>
+<p class="body">QA complete is the last dated gate in this sheet — there is no launch-date column — so a QA date arriving is the closest thing to a launch check. “Confirmed” means Status now reads Done.</p>
+<details class="tbl">
+<summary>Show the list<span class="cn">3 items</span></summary>
+<div class="tblw">
+<table class="wide">
+<thead><tr><th>Item</th><th>Product</th><th>QA date</th><th>Status now</th><th class="n">Pri</th><th>PM</th><th>QA</th><th>What the dates say</th></tr></thead>
+<tbody>
+<tr><td class="nm">Tailored with AI templates</td><td>Template Library</td><td class="c">9 Sep</td><td><span class="st live">Done</span></td><td class="n">P0</td><td>Kartik Dua</td><td>Sneha Mavuri</td><td><span class="ok">Confirmed.</span> Status is Done; dev complete 24 Jul → QA 9 Sep.</td></tr>
+<tr><td class="nm">Affiliate Payout: Handle PayPal-Denied Payouts</td><td>Affiliate Manager</td><td class="c">7 Sep</td><td><span class="st live">Done</span></td><td class="n">P0</td><td>Bhaskar Bhagawati</td><td>Ramu Chhetri Abhishek Mishra</td><td><span class="ok">Confirmed.</span> Status is Done; dev complete 1 Sep → QA 7 Sep.</td></tr>
+<tr><td class="nm">Elemental Library (Graphics/icons) - Phase 1 with icons, emojis, illustrations</td><td>Template Library</td><td class="c">9 Sep</td><td><span class="st blk">Blocked</span></td><td class="n">P0</td><td><b>Kartik Dua</b></td><td><b>Sneha Mavuri</b></td><td>Blocked on the funnels review — owner named as Saqib Mohammed; dev 4 Sep and QA 9 Sep have both passed.</td></tr></tbody>
+</table>
+</div>
+</details>
+<div class="callout danger">
+<span class="ch">Action — Kartik Dua, with Rangeesh Rajagopal and Saqib Mohammed: Elemental Library P1</span>
+<p>Two of the three QA dates are confirmed: <b>Tailored with AI templates</b> and <b>PayPal-Denied Payouts</b> both read Done. <b>Elemental Library P1</b> does not — its QA date of 9 September arrived with the row Blocked, its dev date of 4 September has also passed, and the reason names the counterpart: <span class="c">Blocked on funnels review - Funnel Review Owner [ Saqib Mohammed ]</span>.</p>
+<p><b>Kartik</b> — this is a <span class="c">Sept'26</span> Level Up item with a named blocker owner and no date. Ask <b>Saqib Mohammed</b> for a review date this week; if it is not September, move the Est. Launch. <b>Rangeesh</b> — confirm whether dev is finished behind the block so the dates can be reset honestly.</p>
+</div>
+
+<h2 class="s"><span class="num">A2</span> What moved — 16 milestones by stage</h2>
+<details class="tbl">
+<summary>Show the breakdown<span class="cn">4 stages</span></summary>
+<div class="tblw">
+<table class="wide">
+<thead><tr><th>Stage date</th><th class="n">Arrived</th><th class="n">Moved on</th><th>Where it happened</th></tr></thead>
+<tbody>
+<tr><td class="nm">PRD complete</td><td class="n">5</td><td class="n">4/5</td><td>Tiktok ads (8 Sep) <span class="muted">P0</span> · Social listening - Overview and other Navigation changes (9 Sep) <span class="muted">P0</span> · Done for you Funnels (7 Sep) <span class="muted">P0</span> · Platform Expansion (9 Sep, still In product) <span class="muted">P0</span> · Expansion of Templates in other products (Whatsapp) (10 Sep) <span class="muted">P0</span></td></tr>
+<tr><td class="nm">Design complete</td><td class="n">4</td><td class="n">2/4</td><td>Tiktok ads (8 Sep) <span class="muted">P0</span> · Brand board UX fixes (9 Sep, still In design) <span class="muted">P0</span> · Unified Review Inbox inside Conversations (7 Sep, still In design) <span class="muted">P0</span> · Typography customisations in brand boards (9 Sep) <span class="muted">P0</span></td></tr>
+<tr><td class="nm">Dev complete</td><td class="n">4</td><td class="n">2/4</td><td>Unified Inbox for Comment management in Conversation (9 Sep, still In dev) <span class="muted">P0</span> · Switch/Select templates from within the builder (8 Sep) <span class="muted">P0</span> · AI PPT maker within GHL (9 Sep) <span class="muted">P0</span> · Elemental Library (Graphics/icons) - Phase 1 with icons, emojis, illustrations (4 Sep, still Blocked) <span class="muted">P0</span></td></tr>
+<tr><td class="nm">QA complete</td><td class="n">3</td><td class="n">2/3</td><td>Tailored with AI templates (9 Sep) <span class="muted">P0</span> · Affiliate Payout: Handle PayPal-Denied Payouts (7 Sep) <span class="muted">P0</span> · Elemental Library (Graphics/icons) - Phase 1 with icons, emojis, illustrations (9 Sep, still Blocked) <span class="muted">P0</span></td></tr></tbody>
+<tfoot><tr><td>Total</td><td class="n">16</td><td class="n">10/16</td><td>6 of the 16 arrived without the status moving past that stage</td></tr></tfoot>
+</table>
+</div>
+</details>
+<div class="callout">
+<span class="ch">Ten of sixteen arrivals moved on; the six that did not are in three products</span>
+<p>Four of five PRD dates moved on, two of four design dates, two of four dev dates and two of three QA dates. <b>Tailored templates</b> and <b>PayPal-Denied Payouts</b> closed on their QA dates; <b>Switch/Select templates</b> and <b>AI PPT maker</b> moved from dev into QA on their dev dates. The six that did not move: Platform Expansion (PRD 9 Sep, still In product) and Unified Review Inbox (design 7 Sep, still In design) in Reputation Management; Brand board UX fixes (design 9 Sep, still In design) in Brand Boards; Unified Inbox (dev 9 Sep, still In dev) in Social Planner; and Elemental P1 twice (dev 4 Sep, QA 9 Sep) in Template Library.</p>
+</div>
+
+<h2 class="s crit"><span class="num">A3</span> Dev-complete dates arrived, status unchanged — 2 items</h2>
+<p class="body">The <span class="c">Dev complete date</span> column holds planned and actual dates in the same cell, so a date in the past means only that the date arrived. For these rows it arrived and Status did not move — either dev slipped and the date needs revising, or dev finished and the status is stale.</p>
+<details class="tbl">
+<summary>Show the list<span class="cn">2 items</span></summary>
+<div class="tblw">
+<table class="wide">
+<thead><tr><th>Item</th><th>Product</th><th>Dev-complete</th><th>Status</th><th class="n">Pri</th><th>PM</th><th>Dev</th><th>Next gate</th></tr></thead>
+<tbody>
+<tr><td class="nm">Unified Inbox for Comment management in Conversation</td><td>Social Planner</td><td class="c">9 Sep</td><td><span class="st dev">In dev</span></td><td class="n">P0</td><td>Akansha Simran Shivam Sharma</td><td>Mohammed Marvan Hemant Yadav</td><td><span class="muted">no QA date</span></td></tr>
+<tr><td class="nm">Elemental Library (Graphics/icons) - Phase 1 with icons, emojis, illustrations</td><td>Template Library</td><td class="c">4 Sep</td><td><span class="st blk">Blocked</span></td><td class="n">P0</td><td>Kartik Dua</td><td>Rangeesh Rajagopal</td><td>Blocked on funnels review - Funnel Review Owner [ Saqib Mohammed ]</td></tr></tbody>
+</table>
+</div>
+</details>
+<p class="body muted">Two others reached their dev date and did move on — <b>Switch/Select templates from within the builder</b> is now In QA, <b>AI PPT maker within GHL</b> is now In QA.</p>
+<div class="callout">
+<span class="ch">Action — Akansha Simran / Shivam Sharma, with Mohammed Marvan and Hemant Yadav</span>
+<p><b>Unified Inbox for Comment management</b> reached dev-complete on 9 September with the row still In dev and its QA cell reading <span class="c">TBD Conversation team</span>. <b>Marvan and Hemant</b> — did dev finish? If yes, move Status to In QA; if no, revise the date. The QA cell needs a date from the Conversations side or a named person there; a dependency note is not a plan. Elemental P1 is the other row here and is covered in A1.</p>
+</div>
+
+<!-- ============ PART B ============ -->
+<h2 class="s"><span class="num">B</span> Week ahead — Fri 11 Sep to Thu 17 Sep</h2>
+<div class="metrics">
+<div class="m"><div class="v">16</div><div class="k">milestones due</div></div>
+<div class="m good"><div class="v">3</div><div class="k">QA completions</div></div>
+<div class="m warn"><div class="v">11</div><div class="k">dev completions</div></div>
+<div class="m"><div class="v">1</div><div class="k">design completions</div></div>
+<div class="m"><div class="v">1</div><div class="k">PRD completions</div></div>
+</div>
+<p class="body">The same load as the week just closed — 16 against 16. 11 dev completions feed 3 QA completions; 3 milestones are due today.</p>
+
+<h2 class="s good"><span class="num">B1</span> QA completing — 3 items, one of them today</h2>
+<details class="tbl">
+<summary>Show the list<span class="cn">3 items</span></summary>
+<div class="tblw">
+<table class="wide">
+<thead><tr><th>Item</th><th>Product</th><th>QA date</th><th>Status</th><th class="n">Pri</th><th>PM</th><th>Dev / QA</th><th>Risk</th></tr></thead>
+<tbody>
+<tr><td class="nm">Switch/Select templates from within the builder</td><td>Template Library</td><td class="c"><b>today</b></td><td><span class="st qa">In QA</span></td><td class="n">P0</td><td><b>Kartik Dua</b></td><td><b>Sunil Kandpal</b> <span class="muted">/</span> Vishrut Sharma</td><td class="risk"><span class="flag crit"><b>Due today</b></span><span class="muted"> · </span><span class="flag muted">Sep'26 launch</span></td></tr>
+<tr><td class="nm">Typography customisations in brand boards</td><td>Brand Boards</td><td class="c">16 Sep</td><td><span class="st dev">In dev</span></td><td class="n">P0</td><td><b>Kartik Dua</b></td><td><b>Sumit Kolhe</b> <span class="muted">/</span> Sneha Mavuri</td><td class="risk"><span class="flag warn"><b>QA due while still in dev</b></span><span class="muted"> · </span><span class="flag muted">Sep'26 launch</span></td></tr>
+<tr><td class="nm">Reputation Metrics in Location Dashboard</td><td>Reputation Management</td><td class="c">17 Sep</td><td><span class="st qa">In QA</span></td><td class="n">P1</td><td><b>Reshma Kris M Shreya Banerjee Shubham Cheema</b></td><td><b>Nikhil Mhatre</b> <span class="muted">/</span> Priyanka Deb</td><td class="risk"><span class="flag warn"><b>QA date precedes dev complete (2 Oct) — one is wrong</b></span><span class="muted"> · </span><span class="flag muted">Sep'26 launch</span></td></tr></tbody>
+<tfoot><tr><td>3 items</td><td>3 products</td><td colspan="3">2 P0 · 3 Level Up</td><td colspan="3">3 with a risk flag · 2 already In QA</td></tr></tfoot>
+</table>
+</div>
+</details>
+<div class="callout danger">
+<span class="ch">Action — Kartik Dua and Reshma Kris M, with Vishrut Sharma, Sumit Kolhe, Sneha Mavuri and Nikhil Mhatre</span>
+<p><b>Switch/Select templates</b> is due today: In QA, dev finished 8 September, Vishrut Sharma named. <b>Kartik</b> — if QA signs off today, set Status to Done; it is the cleanest <span class="c">Sept'26</span> row on the sheet. <b>Typography customisations</b> (<span class="c">Sep'26</span>) has QA due 16 September while it is still In dev with dev-complete due today, only two days after its design date. <b>Kartik, with Sumit Kolhe and Sneha Mavuri</b> — five days from dev-complete to QA-complete is the whole margin.</p>
+<p><b>Reputation Metrics in Location Dashboard</b> (<span class="c">Sep'26</span>) has QA complete on 17 September and dev complete on 2 October — impossible as written, and it is In QA today. <b>Reshma, with Nikhil</b> — which date is real? If dev really ends 2 October, the row is an <span class="c">Oct'26</span> launch.</p>
+</div>
+<p class="body muted">Just beyond the window: <b>Two way sync</b> dev (18 Sep) · <b>Auto creation of brand boards for old accounts with subaccount url</b> dev (18 Sep) · <b>Auto creation of brand boards for old accounts with subaccount url</b> QA (18 Sep) · <b>Brand board UX fixes</b> QA (20 Sep) · <b>Unlimited Hiring Depth V1</b> QA (21 Sep) · <b>AI PPT maker within GHL</b> QA (21 Sep) · <b>Advanced video testimonial editing + auto stitching</b> PRD (21 Sep) · <b>Expansion of Templates in other products (Whatsapp)</b> QA (22 Sep) · <b>Elemental Library (Graphics/icons) Phase 2 with AI generator</b> QA (23 Sep) · <b>Magic link for social connections (External Connection)</b> QA (24 Sep).</p>
+
+<h2 class="s"><span class="num">B2</span> Dev completing — 11 items</h2>
+<details class="tbl">
+<summary>Show the list<span class="cn">11 items</span></summary>
+<div class="tblw">
+<table class="wide">
+<thead><tr><th>Item</th><th>Product</th><th>Dev date</th><th>Status</th><th class="n">Pri</th><th>PM</th><th>Dev / QA</th><th>Design complete</th><th>Risk</th></tr></thead>
+<tbody>
+<tr><td class="nm">ChatGPT ads</td><td>Ad Manager</td><td class="c"><b>today</b></td><td><span class="st dev">In dev</span></td><td class="n">P0</td><td>Manas Dixit Samriddh Jain</td><td>Jay Bankoti <span class="muted">/</span> Ramu Chhetri Muskan Kesarwani</td><td><span class="muted">not required</span></td><td class="risk">Dev-complete due today, but the sheet says completion depends on the OpenAI OAuth flow, ETA 24 Sep. <span class="muted">·</span> <span class="flag crit"><b>Due today</b></span></td></tr>
+<tr><td class="nm">Typography customisations in brand boards</td><td>Brand Boards</td><td class="c"><b>today</b></td><td><span class="st dev">In dev</span></td><td class="n">P0</td><td>Kartik Dua</td><td>Sumit Kolhe <span class="muted">/</span> Sneha Mavuri</td><td><span class="ok">9 Sep</span></td><td class="risk"><span class="flag crit"><b>Due today</b></span><span class="muted"> · </span><span class="flag warn"><b>Dev complete is only 2 days after design complete</b></span><span class="muted"> · </span><span class="flag muted">Sep'26 launch</span></td></tr>
+<tr><td class="nm">Loyalty and Referral with online and offline store option with apple and google wallet option.</td><td>Loyalty &amp; Referral</td><td class="c">15 Sep</td><td><span class="st dev">In dev</span></td><td class="n">P0</td><td>Bhaskar Bhagawati</td><td>Malde Chavda Shrey Rohatgi Darp Dhameliya <span class="muted">/</span> Ramu Chhetri Abhishek Mishra</td><td><span class="ok">22 Aug</span></td><td class="risk"><span class="flag warn"><b>Darp Dhameliya carries 3 milestones this window</b></span></td></tr>
+<tr><td class="nm">Tiktok ads</td><td>Ad Manager</td><td class="c">15 Sep</td><td><span class="st dev">In dev</span></td><td class="n">P0</td><td>Manas Dixit Samriddh Jain</td><td>Rohan Shah <span class="muted">/</span> Ramu Chhetri</td><td><span class="muted">not required</span></td><td class="risk">Awaiting partial approvals on API scopes from TikTok; no internal blockers. QA 9 Oct.</td></tr>
+<tr><td class="nm">Affiliate-Level Consent, Tax &amp; Payout Compliance Gate</td><td>Affiliate Manager</td><td class="c">15 Sep</td><td><span class="st dev">In dev</span></td><td class="n">P1</td><td>Bhaskar Bhagawati</td><td>Darp Dhameliya <span class="muted">/</span> Ramu Chhetri Abhishek Mishra</td><td><span class="ok">28 Aug</span></td><td class="risk"><span class="flag warn"><b>Darp Dhameliya carries 3 milestones this window</b></span></td></tr>
+<tr><td class="nm">Audit Log for Affiliate Manager</td><td>Affiliate Manager</td><td class="c">15 Sep</td><td><span class="st dev">In dev</span></td><td class="n">P0</td><td>Bhaskar Bhagawati</td><td>Darp Dhameliya <span class="muted">/</span> Ramu Chhetri</td><td><span class="muted">not required</span></td><td class="risk"><span class="flag warn"><b>Darp Dhameliya carries 3 milestones this window</b></span></td></tr>
+<tr><td class="nm">Brand board UX fixes</td><td>Brand Boards</td><td class="c">16 Sep</td><td><span class="st plan">In design</span></td><td class="n">P0</td><td>Kartik Dua</td><td>Sumit Kolhe <span class="muted">/</span> Sneha Mavuri</td><td><span class="ok">9 Sep</span></td><td class="risk"><span class="flag crit"><b>Dev not started, 5 days to dev-complete</b></span><span class="muted"> · </span><span class="flag muted">Sep'26 launch</span></td></tr>
+<tr><td class="nm">Social AI draft Post</td><td>Social Planner</td><td class="c">17 Sep</td><td><span class="st plan">Ready to pick up</span></td><td class="n">P0</td><td>Akansha Simran Shivam Sharma</td><td>Aman Dubey <span class="muted">/</span> Suvarna Bhamare</td><td><span class="late">not set</span></td><td class="risk"><span class="flag warn"><b>Sheet says “2026-09-09: Dev completion date will get changed as we put this item on hold due to comment sync to conversation feature”</b></span><span class="muted"> · </span><span class="flag crit"><b>Dev not started, 6 days to dev-complete</b></span></td></tr>
+<tr><td class="nm">Elemental Library (Graphics/icons) Phase 2 with AI generator</td><td>Template Library</td><td class="c">17 Sep</td><td><span class="st dev">In dev</span></td><td class="n">P0</td><td>Kartik Dua</td><td>Rangeesh Rajagopal <span class="muted">/</span> Sneha Mavuri</td><td><span class="muted">not required</span></td><td class="risk"><span class="flag muted">On track — QA 23 Sep</span><span class="muted"> · </span><span class="flag muted">Sep'26 launch</span></td></tr>
+<tr><td class="nm">Social clips</td><td>Social Planner</td><td class="c">17 Sep</td><td><span class="st dev">In dev</span></td><td class="n">P0</td><td>Akansha Simran Shivam Sharma</td><td>Vinamra Sareen <span class="muted">/</span> Kavya T</td><td><span class="late">not set</span></td><td class="risk"><span class="flag muted">On track — QA 30 Oct</span></td></tr>
+<tr><td class="nm">Expansion of Templates in other products (Whatsapp)</td><td>Template Library</td><td class="c">17 Sep</td><td><span class="st dev">In dev</span></td><td class="n">P0</td><td>Kartik Dua</td><td>Sunil Kandpal <span class="muted">/</span> Sneha Mavuri</td><td><span class="muted">not required</span></td><td class="risk"><span class="flag muted">On track — QA 22 Sep</span></td></tr></tbody>
+<tfoot><tr><td>11 items</td><td>6 products</td><td colspan="3">10 P0 · 10 Level Up</td><td colspan="4">2 not yet in dev · 0 dev unnamed · 0 QA unnamed</td></tr></tfoot>
+</table>
+</div>
+</details>
+<div class="callout danger">
+<span class="ch">Action — Manas Dixit (ChatGPT ads, Tiktok ads), Bhaskar Bhagawati (3 of the 11), Kartik Dua and Akansha Simran / Shivam Sharma</span>
+<p><b>ChatGPT ads</b> is due today with Jay Bankoti, but the sheet says completion depends on the OpenAI OAuth flow, ETA 24 September — so a dev-complete today cannot be the whole feature. <b>Tiktok ads</b> (15 Sep, Rohan Shah) is awaiting partial approvals on API scopes from TikTok, with no internal blockers. <b>Manas</b> — both rows need dates that reflect the external ETAs, and the OpenAI one should be in <span class="c">Reason of Delay</span> as a date, not prose. <b>Darp Dhameliya</b> is named dev on three dev-completes dated 15 September — Loyalty &amp; Referral (with Malde Chavda and Shrey Rohatgi), the Consent gate and Audit Log — feeding Ramu Chhetri and Abhishek Mishra for QA. <b>Bhaskar</b> — either the three land on different days or QA needs cover that week.</p>
+<p><b>Brand board UX fixes</b> has dev-complete on 16 September and is still In design with its design date already passed; <b>Kartik, with Sumit Kolhe</b> — dev has five days and has not started. <b>Social AI draft Post</b> has dev-complete on 17 September, is Ready to be picked up and On hold behind comment sync, and the sheet itself says the date will change; <b>Akansha and Shivam</b> — change it. Typography (today), Elemental P2, Social clips and WhatsApp templates (17 September) are in dev with dev and QA named and QA dates set.</p>
+</div>
+
+<h2 class="s"><span class="num">B3</span> Everything else due this week — 2 further milestones</h2>
+<details class="tbl">
+<summary>Show the breakdown<span class="cn">2 categories</span></summary>
+<div class="tblw">
+<table class="wide">
+<thead><tr><th>Due</th><th class="n">Count</th><th>Where</th></tr></thead>
+<tbody><tr><td class="nm">Design complete</td><td class="n">1</td><td>Done for you Funnels (P0) 14 Sep — <span class="late">No dev named</span></td></tr><tr><td class="nm">PRD complete</td><td class="n">1</td><td>Social Planner AI (P0) <b>today</b></td></tr></tbody>
+<tfoot><tr><td>Total with B1 and B2</td><td class="n">16</td><td>11 dev completions against 3 QA completions</td></tr></tfoot>
+</table>
+</div>
+</details>
+
+<!-- ============ STANDING SECTIONS ============ -->
+
+<h2 class="s crit"><span class="num">C1</span> Overdue and broken date sequences — 7 rows</h2>
+<p class="body"><b>Overdue</b> means a stage date has passed with Status still at or before that stage, or an <span class="c">Est. Launch</span> month has ended without a Done. <b>Broken sequence</b> means the dates are impossible as written. Six of the overdue rows are P0.</p>
+<details class="tbl">
+<summary>Show the list<span class="cn">7 rows</span></summary>
+<div class="tblw">
+<table class="wide">
+<thead><tr><th>Item</th><th>Product</th><th class="n">Pri</th><th>Status</th><th>Problem</th><th class="n">Days</th><th>PM / holder</th></tr></thead>
+<tbody>
+<tr><td class="nm">Social listening</td><td>Social Planner</td><td class="n">P0</td><td><span class="st dev">In dev</span></td><td>Dev 17 Aug passed while In dev; sheet says the Infegy contract is not closed by procurement (Sean Kim/Varun). QA 17 Oct.</td><td class="n"><span class="late">25d</span></td><td>Akansha Simran Shivam Sharma / Ayush Chaurasia</td></tr>
+<tr><td class="nm">Elemental Library (Graphics/icons) - Phase 1 with icons, emojis, illustrations</td><td>Template Library</td><td class="n">P0</td><td><span class="st blk">Blocked</span></td><td>Blocked on the funnels review — owner named as Saqib Mohammed; dev 4 Sep and QA 9 Sep have both passed.</td><td class="n"><span class="late">7d</span></td><td>Kartik Dua / Rangeesh Rajagopal</td></tr>
+<tr><td class="nm">Unified Review Inbox inside Conversations</td><td>Reputation Management</td><td class="n">P0</td><td><span class="st blk">Blocked</span></td><td>Design 7 Sep passed; Conversations dependency — customer call on the prototype, blocker: Sid wants to auto-merge contacts. No dev, no Est. Launch.</td><td class="n"><span class="late">4d</span></td><td>Reshma Kris M Shreya Banerjee Shubham Cheema / Karthik A J</td></tr>
+<tr><td class="nm">Brand board UX fixes</td><td>Brand Boards</td><td class="n">P0</td><td><span class="st plan">In design</span></td><td>Design 9 Sep passed while In design. Next gate Dev 16 Sep</td><td class="n"><span class="late">2d</span></td><td>Kartik Dua / Tanya Redkar</td></tr>
+<tr><td class="nm">Platform Expansion</td><td>Reputation Management</td><td class="n">P0</td><td><span class="st plan">In product</span></td><td>PRD 9 Sep passed while In product</td><td class="n"><span class="late">2d</span></td><td>Reshma Kris M Shreya Banerjee Shubham Cheema / <span class="late">TBD</span></td></tr>
+<tr><td class="nm">Unified Inbox for Comment management in Conversation</td><td>Social Planner</td><td class="n">P0</td><td><span class="st dev">In dev</span></td><td>Dev 9 Sep passed while In dev; QA cell reads <span class="c">TBD Conversation team</span> — no date on the other side.</td><td class="n"><span class="late">2d</span></td><td>Akansha Simran Shivam Sharma / Mohammed Marvan Hemant Yadav</td></tr>
+<tr><td class="nm">Reputation Metrics in Location Dashboard</td><td>Reputation Management</td><td class="n">P1</td><td><span class="st qa">In QA</span></td><td><b>Broken sequence</b> — QA complete 17 Sep is before dev complete 2 Oct</td><td class="n muted">—</td><td>Reshma Kris M Shreya Banerjee Shubham Cheema / Nikhil Mhatre</td></tr></tbody>
+<tfoot><tr><td>7 rows</td><td>4 products</td><td class="n">6 P0</td><td colspan="4">6 overdue · 1 broken sequence. Akansha Simran holds 2, Kartik Dua holds 2.</td></tr></tfoot>
+</table>
+</div>
+</details>
+<div class="callout danger">
+<span class="ch">Action — Akansha Simran / Shivam Sharma, Kartik Dua and Reshma Kris M: six overdue rows, all P0, two each</span>
+<p><b>Social listening</b> is 25 days past its dev date; the sheet says the Infegy contract is not yet closed by procurement (Sean Kim/Varun), and QA is 17 October, so there is slack to re-plan rather than carry a dead date. <b>Elemental Library P1</b> is seven days past dev with QA gone too, blocked on the funnels review with Saqib Mohammed named (A1). <b>Unified Review Inbox</b> is four days past design, blocked on Conversations — the reason records a customer call on the running prototype and a blocker: Sid wants to auto-merge contacts — with no dev named and no Est. Launch.</p>
+<p>The other three are two days over: <b>Brand board UX fixes</b> (design 9 Sep, dev due 16 Sep), <b>Platform Expansion</b> (PRD 9 Sep, dev owner TBD) and <b>Unified Inbox</b> (dev 9 Sep, QA cell is prose). Each needs a status change today or a new date with a line in <span class="c">Reason of Delay</span>. One broken sequence sits alongside: Reputation Metrics, QA 17 September before dev 2 October.</p>
+</div>
+<div class="callout">
+<span class="ch">Ten September launches — three Done, two of the seven open are clean as dated</span>
+<p>Post Sync, Flexible Reviews AI Agent settings and Tailored templates are Done. Of the seven open <span class="c">Sep'26</span> rows, Switch/Select (QA today) and Elemental P2 (dev 17, QA 23 Sep) have dates inside the month with no flags. Typography (QA 16 Sep) is dated while still in dev; Brand board UX fixes (QA 20 Sep) has not started dev and its design date has passed; Auto-creation of brand boards is Blocked with dev and QA both on 18 September; Elemental P1 is Blocked with both dates passed; Reputation Metrics cannot make it as written with dev on 2 October. With 19 days left, <b>Kartik Dua and Reshma Kris M</b> should say in the meeting which of these seven are still September.</p>
+</div>
+
+<h2 class="s crit"><span class="num">C2</span> Blocked, on hold or waiting on another team — 11 items</h2>
+<details class="tbl">
+<summary>Show the list<span class="cn">11 items</span></summary>
+<div class="tblw">
+<table class="wide">
+<thead><tr><th>Item</th><th>Product</th><th class="n">Pri</th><th>Est. Launch</th><th>Status</th><th>PM</th><th>Dev</th><th>Note</th></tr></thead>
+<tbody>
+<tr><td class="nm">Elemental Library (Graphics/icons) - Phase 1 with icons, emojis, illustrations</td><td>Template Library</td><td class="n">P0</td><td class="c">Sep'26</td><td><span class="st blk">Blocked</span></td><td>Kartik Dua</td><td>Rangeesh Rajagopal</td><td class="risk"><span class="late">Blocked</span> — Blocked on funnels review - Funnel Review Owner [ Saqib Mohammed ] <span class="muted">(7d overdue)</span></td></tr>
+<tr><td class="nm">Unified Review Inbox inside Conversations</td><td>Reputation Management</td><td class="n">P0</td><td class="c"><span class="late">TBD</span></td><td><span class="st blk">Blocked</span></td><td>Reshma Kris M Shreya Banerjee Shubham Cheema</td><td><span class="late">TBD</span></td><td class="risk"><span class="late">Blocked</span> — Coversations Team Dependancy Link 1. Customer call conversation - on running prototype  2. Blocker - Sid wants to auto merge contacts Slack thread <span class="muted">(4d overdue)</span></td></tr>
+<tr><td class="nm">Social Planner - social score</td><td>Social Planner</td><td class="n">P1</td><td class="c">Oct'26</td><td><span class="st blk">Blocked</span></td><td>Akansha Simran Shivam Sharma</td><td>Aman Dubey</td><td class="risk"><span class="late">Blocked</span> — 2026-09-09: We can't deliver this by LevelUp due to other priority items. Developement is on hold</td></tr>
+<tr><td class="nm">Auto creation of brand boards for old accounts with subaccount url</td><td>Brand Boards</td><td class="n">P0</td><td class="c">Sep'26</td><td><span class="st blk">Blocked</span></td><td>Kartik Dua</td><td>Sumit Kolhe</td><td class="risk"><span class="late">Blocked</span> — Blocked on tracking analytics across products - Emails, forms, funnels etc Tracker -  https://docs.google.com/spreadsheets/d/1jLCca5kJ0au_HmUQpM_hYLhmPkI9-xARoC_D-8APezM/edit?usp=sharing</td></tr>
+<tr><td class="nm">Social AI draft Post</td><td>Social Planner</td><td class="n">P0</td><td class="c">Oct'26</td><td><span class="st plan">Ready to pick up</span></td><td>Akansha Simran Shivam Sharma</td><td>Aman Dubey</td><td class="risk"><span class="late">On hold</span> — 2026-09-09: Dev completion date will get changed as we put this item on hold due to comment sync to conversation feature</td></tr>
+<tr><td class="nm">Social listening</td><td>Social Planner</td><td class="n">P0</td><td class="c">Oct'26</td><td><span class="st dev">In dev</span></td><td>Akansha Simran Shivam Sharma</td><td>Ayush Chaurasia</td><td class="risk">Waiting on another team — Yet to close the Infegy contract by procurement team with Sean Kim/Varun. <span class="muted">(25d overdue)</span></td></tr>
+<tr><td class="nm">Revamp Review AI activation</td><td>Reputation Management</td><td class="n">P0</td><td class="c">Oct'26</td><td><span class="st plan">Ready to pick up</span></td><td>Reshma Kris M Shreya Banerjee Shubham Cheema</td><td>Upamanyu Sarangi</td><td class="risk">Waiting on another team — AI Suite team dependency link</td></tr>
+<tr><td class="nm">ChatGPT ads</td><td>Ad Manager</td><td class="n">P0</td><td class="c">Oct'26</td><td><span class="st dev">In dev</span></td><td>Manas Dixit Samriddh Jain</td><td>Jay Bankoti</td><td class="risk">Waiting on another team — The overall completion of openAI ads by us on HL Ad Manager depends on the release of oauth flow by the openAI team, ETA provided by them is 24th Sept and post that we'll stitch it in our flow once it's released.</td></tr>
+<tr><td class="nm">Tiktok ads</td><td>Ad Manager</td><td class="n">P0</td><td class="c">Oct'26</td><td><span class="st dev">In dev</span></td><td>Manas Dixit Samriddh Jain</td><td>Rohan Shah</td><td class="risk">Waiting on another team — Potential delay/change of scope may be observed, awaiting partial approvals on API scopes from TikTok. No internal blockers.</td></tr>
+<tr><td class="nm">Social listening - Overview and other Navigation changes</td><td>Social Planner</td><td class="n">P0</td><td class="c">Oct'26</td><td><span class="st dev">In dev</span></td><td>Akansha Simran Shivam Sharma</td><td>Ayush Chaurasia</td><td class="risk">Waiting on another team — Yet to close the Infegy contract by procurement team with Sean Kim/Varun.</td></tr>
+<tr><td class="nm">Social listening - Smart Alerts &amp; Automated Digests</td><td>Social Planner</td><td class="n">P0</td><td class="c">Nov'26</td><td><span class="st plan">Planned</span></td><td>Akansha Simran Shivam Sharma</td><td>Ayush Chaurasia</td><td class="risk">Waiting on another team — Yet to close the Infegy contract by procurement team with Sean Kim/Varun.</td></tr></tbody>
+<tfoot><tr><td>11 items</td><td>5 products</td><td class="n">10 P0</td><td colspan="5">4 blocked · 1 on hold · 6 waiting on another team · 8 Level Up</td></tr></tfoot>
+</table>
+</div>
+</details>
+<div class="callout danger">
+<span class="ch">Action — Kartik Dua, Akansha Simran / Shivam Sharma, Reshma Kris M and Manas Dixit: four blocked, one on hold, six waiting on another team</span>
+<p><b>Blocked:</b> Elemental Library P1 (funnels review, owner Saqib Mohammed, seven days overdue) and Auto-creation of brand boards (tracking analytics across products; a tracker sheet is linked) — both <span class="c">Sep'26</span> Level Up items with <b>Kartik</b>; Unified Review Inbox (Conversations — Sid wants to auto-merge contacts; four days overdue) with <b>Reshma</b>; and social score, whose Status reads Blocked and whose reason says development is on hold for other priorities, with <b>Akansha and Shivam</b>. <b>On hold:</b> Social AI draft Post, behind comment sync, still carrying a 17 September dev date.</p>
+<p><b>Waiting on another team:</b> the three Social listening rows on the Infegy contract (procurement, Sean Kim/Varun); Revamp Review AI on the AI Suite team; ChatGPT ads on the OpenAI OAuth flow (ETA 24 September — the only external date on the sheet); Tiktok ads on TikTok API scope approvals. Three of the eleven name a person on the other side (Saqib Mohammed, Sean Kim/Varun, Sid) and one has a date. The rest need both before their own dates mean anything.</p>
+</div>
+<div class="callout a">
+<span class="ch">Level Up tab disagrees with the roadmap on 24 of 31 items</span>
+<p>Tailored templates, Public API Access and PayPal-Denied Payouts read Done on the roadmap but In dev on the Level Up tab; Flexible Reviews AI reads Done against In QA; AI PPT maker is In QA against In product work; Typography, Cross-product Brand Boards and WhatsApp templates are In dev against product work or planned. The roadmap is the more current of the two in every case. Whoever owns the Level Up tab should refresh it from the roadmap before anything is presented upward.</p>
+</div>
+
+<h2 class="s"><span class="num">C3</span> Missing dates — who needs to fill what</h2>
+<p class="body">Scored against the PRD → design → dev → QA chain on all 41 scoped rows; design dates only on the 22 rows with Design Required = Yes. Blank, <span class="c">TBD</span>, <span class="c">NA</span>, <span class="c">WIP</span>, a bare month and prose in a date cell all count as missing.</p>
+<div class="metrics">
+<div class="m good"><div class="v">23<span style="font-size:14px;color:var(--ink-mute)">/41</span></div><div class="k">rows fully dated</div></div>
+<div class="m warn"><div class="v">14</div><div class="k">rows with no QA date</div></div>
+<div class="m warn"><div class="v">12</div><div class="k">rows with no dev date</div></div>
+<div class="m warn"><div class="v">2</div><div class="k">rows with no launch month</div></div>
+<div class="m warn"><div class="v">6</div><div class="k">dev or QA unnamed</div></div>
+</div>
+<details class="tbl">
+<summary>Show the table<span class="cn">6 fields</span></summary>
+<div class="tblw">
+<table class="wide">
+<thead><tr><th>Field</th><th class="n">Missing</th><th class="n">%</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td class="nm">QA complete date</td><td class="n">14</td><td class="n">34%</td><td>Cannot tell what is launch-ready — a third of the roadmap has no date for the last gate</td></tr>
+<tr><td class="nm">Dev complete date</td><td class="n">12</td><td class="n">29%</td><td>“In dev” carries no expected end on a third of the roadmap</td></tr>
+<tr><td class="nm">Design complete date <span class="muted">(of 22 rows where Design Required = Yes)</span></td><td class="n">12</td><td class="n">55%</td><td>No design → dev forecast on half of design-dependent work</td></tr>
+<tr><td class="nm">Est. Launch month</td><td class="n">2</td><td class="n">5%</td><td>Two items cannot be placed in any month — Advanced video testimonial editing + auto stitching, Unified Review Inbox inside Conversations</td></tr>
+<tr><td class="nm">Dev Owner</td><td class="n">6</td><td class="n">15%</td><td>Nobody to ask on these rows yet</td></tr>
+<tr><td class="nm">QA Owner</td><td class="n">0</td><td class="n">0%</td><td>Every item has a QA owner</td></tr></tbody>
+<tfoot><tr><td>Fully dated</td><td class="n">23</td><td class="n">56%</td><td>of scoped rows carry the complete chain</td></tr></tfoot>
+</table>
+</div>
+</details>
+<p class="body"><b>Chase list — by product area, scoped rows only.</b> PM named for routing; the gap belongs to the area. Fill these in before Friday.</p>
+<div class="chase">
+<div class="p"><p class="who">Social Planner · 13 rows</p><ul>
+<li><span class="cnt">9</span> design-complete dates · <span class="cnt">7</span> QA-complete dates · <span class="cnt">5</span> dev-complete dates</li>
+<li><span class="cnt">1</span> Blocked · <span class="cnt">2</span> overdue rows</li>
+<li>QA complete reads &quot;TBD Conversation team&quot; — not a date</li>
+<li>Design complete is a month (&quot;Jan,2026&quot;), not a day</li>
+<li class="muted">Akansha Simran Shivam Sharma</li></ul></div>
+<div class="p"><p class="who">Reputation Management · 6 rows</p><ul>
+<li><span class="cnt">5</span> QA-complete dates · <span class="cnt">5</span> dev-complete dates · <span class="cnt">4</span> dev owners · <span class="cnt">2</span> Est. Launch months · <span class="cnt">1</span> design-complete date</li>
+<li><span class="cnt">1</span> Blocked · <span class="cnt">2</span> overdue rows</li>
+<li>QA complete 17 Sep is before dev complete 2 Oct</li>
+<li class="muted">Reshma Kris M Shreya Banerjee Shubham Cheema</li></ul></div>
+<div class="p"><p class="who">Ad Manager · 5 rows</p><ul>
+<li><span class="cnt">2</span> QA-complete dates · <span class="cnt">2</span> dev-complete dates · <span class="cnt">2</span> design-complete dates · <span class="cnt">2</span> dev owners</li>
+<li class="muted">Manas Dixit Samriddh Jain</li></ul></div>
+<div class="p"><p class="who">Template Library · 6 rows</p><ul>
+<li><span class="cnt">1</span> Blocked · <span class="cnt">1</span> overdue row</li>
+<li class="muted">Kartik Dua — <span class="ok">all dates and owners filled</span></li></ul></div>
+<div class="p"><p class="who">Brand Boards · 4 rows</p><ul>
+<li><span class="cnt">1</span> Blocked · <span class="cnt">1</span> overdue row</li>
+<li class="muted">Kartik Dua — <span class="ok">all dates and owners filled</span></li></ul></div>
+<div class="p"><p class="who">Clean</p><ul><li><span class="ok">Affiliate Manager (5), Loyalty &amp; Referral (1), Reviews AI (1)</span> — every date and owner filled, nothing overdue</li></ul></div>
+</div>
+<div class="callout">
+<span class="ch">Where the gaps are</span>
+<p>Social Planner carries the largest gap: 9 design-complete dates, 7 QA dates and 5 dev dates missing across 13 rows, most of them the Social listening family and the two Ad-style AI rows. Reputation Management has four rows with no dev named and the only two rows without an Est. Launch month (Advanced video testimonials, Unified Review Inbox). Ad Manager's Omnichannel campaigns and campaign-builder revamp are <span class="c">TBD</span> in every date and owner cell. Template Library, Affiliate Manager, Brand Boards, Loyalty &amp; Referral and Reviews AI have every date and owner filled.</p>
+</div>
+
+<p class="body" style="margin-top:22px"><span class="muted">Questions before the meeting → reply here. Corrections to your own rows → edit the sheet directly and they will appear in next week's update.</span></p>
+
+</div>
+</div>
+
+<!-- ===================== RULES ===================== -->
+<details>
+<summary>Rules &amp; definitions — how each number is computed</summary>
+<div class="dbody">
+<ul class="b tight" style="margin-top:12px">
+<li><b>Source and scope.</b> Marketing OS - Attract - H2 Roadmap, <b>Roadmap by Product — H2'26</b> tab, read on 11 Sep 2026 (sheet last modified 11 Sep 2026 07:50 UTC). Scoped rows only — every row on this tab with both a Product and an Initiative: 41 initiatives across Social Planner (13), Reputation Management (6), Template Library (6), Ad Manager (5), Affiliate Manager (5), Brand Boards (4), Loyalty &amp; Referral (1), Reviews AI (1). The “Not Finalized the Scope” list sits on a separate tab and is not read. <span class="c">Sept'26</span> is read as September. The <span class="c">Level Up</span> tab is read for cross-checking only.</li>
+<li><b>Week.</b> Friday to Thursday, aligned to the Friday read. Part A covers the closed week, Fri 4 Sep to Thu 10 Sep. Part B covers the week ahead, Fri 11 Sep to Thu 17 Sep, which includes today.</li>
+<li><b>Milestones.</b> The four dated stages in this sheet — <span class="c">Product complete date</span> (PRD), <span class="c">Design complete date</span>, <span class="c">Dev complete date</span>, <span class="c">QA complete Date</span>. There is no launch-date or kickoff column, so QA complete stands in for the launch check and “moved on” is inferred from Status: a dev date counts as moved on when Status is In QA or Done, a QA date when Status is Done.</li>
+<li><b>Planned or actual — the key caveat.</b> Each stage cell holds either a plan or a completion, unlabelled. A date in the past means only that the date arrived; the row's owner is the only one who can say whether it was met.</li>
+<li><b>Overdue.</b> A stage date has passed while Status is still at or before that stage (the earliest such date is shown), or the Est. Launch month has ended without Done. Lateness is counted to 11 Sep. <b>Broken sequence</b>: QA before dev, dev before design, or design before PRD.</li>
+<li><b>Holder.</b> In dev → Dev Owner. In QA → QA Owner. In design → Design Owner. In product work / Ready to be picked up / Planned → Product Owner. No name in that column → TBD.</li>
+<li><b>Risk flags</b> on Part B rows: due today; dev not started with a dev date this week; QA due while still in dev; no dev or QA named; QA date before dev date; dev date within two days of design date; a recorded blocker; one person carrying three or more milestones in the window; the item's Est. Launch is this month.</li>
+<li><b>Blocked, on hold, waiting.</b> Any open row whose Status or Reason of Delay says blocked, or that carries any Reason of Delay. The label is read from the reason text.</li>
+<li><b>Missing dates.</b> Percentages are of 41 scoped rows, except design dates, which are of the 22 rows with Design Required = Yes. “Fully dated” means PRD, dev and QA dates present, plus design where required.</li>
+<li><b>Date parsing.</b> Day-first prose (<span class="c">9th Sep,2026</span>), month-first prose (<span class="c">September 15, 2026</span>) and US <span class="c">MM/DD/YYYY</span> are all read. Dates with no year are assumed to be 2026. A bare month (<span class="c">Jan,2026</span>) and prose (<span class="c">TBD Conversation team</span>) count as no date and never as a passed milestone.</li>
+
+<li><b>Known data hazards this week (14).</b> Unified Inbox for Comment management in Conversation: QA complete reads &quot;TBD Conversation team&quot; — not a date · Magic link for social connections (External Connection): Status is In QA but Dev complete is dated 17 Sep 2026, in the future · Workflow Trigger and Action for Post Scheduled and Post Approval: Status is Done but Dev complete is dated 17 Sep 2026, in the future · Workflow Trigger and Action for Post Scheduled and Post Approval: Status is Done but QA complete is dated 2 Oct 2026, in the future · Reputation Metrics in Location Dashboard: QA complete 17 Sep is before dev complete 2 Oct · Reputation Metrics in Location Dashboard: Status is In QA but Dev complete is dated 2 Oct 2026, in the future · Loyalty and Referral with online and offline store option with apple and google wallet option.: PRD complete is dated 22nd August, 2025 (2025) · Social listening: PRD complete is dated 30 May, 2025 (2025) · Post Sync of all socials: Status is Done but QA complete is dated 1 Nov 2026, in the future · Post Sync of all socials: Design complete is a month (&quot;Jan,2026&quot;), not a day · Social clips: Design complete is a month (&quot;May,2026&quot;), not a day · Sep'26 is written &quot;Sep'26&quot; (5) and &quot;Sept'26&quot; (5) · and 2 more.</li>
+</ul>
+</div>
+</details>
+
+<footer>
+<p>Generated from Marketing OS - Attract - H2 Roadmap, Roadmap by Product — H2'26 tab · read 11 Sep 2026 · 41 scoped initiatives · weeks of 4–10 Sep and 11–17 Sep 2026, Friday–Thursday.</p>
+<p>Fill rates across the scoped rows — PRD complete 90% · Design complete 71% (not-required counts as filled) · Dev complete 71% · QA complete 66% · Est. Launch 95% · Dev owner 85% · QA owner 100%.</p>
+<p><strong>What this report cannot yet give you honestly.</strong> An on-time rate. The sheet keeps one cell per stage for planned and actual, so a slipped date overwrites the evidence of the slip, and there is no day-level launch date. This update therefore reports what was dated, what arrived and what is still open — with QA complete standing in for the launch check — rather than what finished on time.</p>
+<p class="gen">Generated 11 Sep 2026 08:43 UTC.</p>
+</footer>
+</div>
+</body>
+</html>
